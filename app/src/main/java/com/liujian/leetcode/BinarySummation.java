@@ -31,11 +31,11 @@ public class BinarySummation {
         if (a == null || b == null) {
             return null;
         }
+        StringBuilder sb = new StringBuilder();
 
         int i = a.length() - 1;
         int j = b.length() - 1;
         int carry = 0;
-        StringBuilder sb = new StringBuilder();
         while (i >= 0 || j >= 0) {
             int sum = carry;
 
